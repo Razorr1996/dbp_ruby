@@ -1,6 +1,6 @@
 FROM ruby:3.0.2-alpine
 
-RUN apk update && apk add --no-cache build-base bash git vim curl
+RUN apk update && apk add --no-cache build-base bash git vim curl stress-ng
 
 RUN mkdir /app
 WORKDIR /app
