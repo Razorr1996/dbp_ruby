@@ -25,5 +25,12 @@ services:
     volumes:
       - bundle_cache:/bundle_cache
 
+  remote:
+    build: ./docker/remote
+    entrypoint: ""
+    volumes:
+      - ./docker/remote:/app:cached
+      - .aws:/root/.aws
+
 volumes:
   bundle_cache:
