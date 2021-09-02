@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 configure do
   set :server, :puma
   set :port, ENV['PORT']
