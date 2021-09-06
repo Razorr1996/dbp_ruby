@@ -22,6 +22,12 @@ class ServerTest < Minitest::Test
     assert last_response.body.include?('stressed')
   end
 
+  def test_happy
+    get '/happy', timeout: 1
+    assert last_response.ok?
+    assert last_response.body.include?('Happy')
+  end
+
   def test_artem
     get '/artem'
     assert last_response.ok?
