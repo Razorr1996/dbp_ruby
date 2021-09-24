@@ -23,7 +23,7 @@ get '/happy' do
 end
 
 get '/cp' do
-  'Continuous Preview success!'
+  'Continuous Preview: check 3!'
 end
 
 get '/stress' do
