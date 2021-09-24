@@ -22,6 +22,10 @@ get '/happy' do
   'Happy Birthday 2021-09-06!'
 end
 
+get '/cp' do
+  'Continuous Preview success!'
+end
+
 get '/stress' do
   timeout = params[:timeout]
   cmd = "stress-ng --vm 1 --vm-bytes 2G --vm-method all --verify -t #{timeout}s"
